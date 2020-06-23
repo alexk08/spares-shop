@@ -1,0 +1,57 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin no-marg-padd {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin no-bord-marg-padd {
+  @include no-marg-padd;
+  border: 0;
+}
+
+@mixin reset-list {
+  @include no-marg-padd;
+  list-style: none;
+}
+
+@mixin barlow-font-regular {
+  font-family: 'Barlow', Arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin barlow-font-semibold {
+  font-family: 'Barlow', Arial, sans-serif;
+  font-weight: 600;
+}
+
+@mixin barlow-font-bold {
+  font-family: 'Barlow', Arial, sans-serif;
+  font-weight: 700;
+}
+
+@mixin proxima-nova-font-regular {
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin proxima-nova-font-semibold {
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  font-weight: 600;
+}
+
+@mixin proxima-nova-font-bold {
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  font-weight: 700;
+}

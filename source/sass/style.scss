@@ -1,3 +1,9 @@
-h1 {
-  color: red;
-}
+//base blocks
+@import "base/fonts.scss";
+@import "base/variables.scss";
+@import "base/mixins.scss";
+@import "base/normalize.scss";
+@import "base/common.scss";
+
+//blocks
+@import "blocks/presentation-link.scss";

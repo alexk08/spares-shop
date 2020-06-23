@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  height: 100%;
+  @include no-marg-padd;
+
+  color: $main-text-color;
+  background-color: $white;
+
+  @include barlow-font-regular;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+}
